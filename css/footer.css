@@ -1,25 +1,46 @@
 .footer {
   color: #f4f4fd;
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media screen and (min-width: 1158px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
-}
+  flex-direction: column;
+  gap: 72px;
 
-.logo-footer-container {
-  margin-right: 120px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    padding: 0 108px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    padding: 0 15px;
+    column-gap: 0;
+  }
 }
 
 .logo-footer {
-  color: #f4f4fd;
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
-.container .logo {
-  display: inline-block;
+.logo-part {
+  color: #f4f4fd;
 }
 
 .container .footer-text {
@@ -30,7 +51,7 @@
 .social-title {
   font-weight: 500;
   margin-bottom: 8px;
-  text-align: start;
+  text-align: center;
   color: #ffffff;
   margin-bottom: 16px;
 }
@@ -53,7 +74,7 @@
 }
 
 .social-container {
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .subscribe-title {
@@ -68,6 +89,7 @@
 
 .subscribe-block {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
