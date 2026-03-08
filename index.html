@@ -24,11 +24,16 @@
       <div class="container header-container">
         <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
         <button class="mobile-menu-open-btn">
-          <svg>
-            <use></use>
+          <svg class="contact-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger"></use>
           </svg>
         </button>
         <div class="mobile-menu">
+          <button class="mobile-menu-close-button" type="button">
+            <svg width="8" height="8" class="mobile-menu-icon-close">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
           <nav class="nav-head">
             <ul class="nav-list">
               <li class="nav-list-item">
@@ -42,16 +47,48 @@
               </li>
             </ul>
           </nav>
-          <address class="address">
-            <ul class="address-info">
-              <li>
-                <a href="mailto:info@devstudio.com" class="address-list">info@devstudio.com</a>
+          <div>
+            <address class="address">
+              <ul class="address-list">
+                <li class="adress-item">
+                  <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
+                </li>
+                <li class="adress-item">
+                  <a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a>
+                </li>
+              </ul>
+            </address>
+            <ul class="social">
+              <li class="social-item">
+                <a class="social-link" href="https://www.instagram.com/"
+                  ><svg width="24" height="24" class="social-link-logo">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="tel:+110001111111" class="address-list">+11 (000) 111-11-11</a>
+              <li class="social-item">
+                <a class="social-link" href="https://x.com/"
+                  ><svg width="24" height="24" class="social-link-logo">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="https://www.facebook.com/"
+                  ><svg width="24" height="24" class="social-link-logo">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="https://ua.linkedin.com/"
+                  ><svg width="24" height="24" class="social-link-logo">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
       </div>
     </header>
@@ -372,7 +409,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="logo-footer-container">
-          <a href="./index.html" class="logo-footer">Web<span class="logo-part">Studio</span></a>
+          <a href="./index.html" class="logo logo-footer">Web<span class="logo-part">Studio</span></a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with digital marketing & growth solutions.
           </p>
@@ -429,7 +466,7 @@
 
     <!-- MODAL SECTION -->
 
-    <!-- <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="close-button" type="button">
           <svg width="8" height="8" class="icon-close">
@@ -498,6 +535,6 @@
           <button class="send-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
