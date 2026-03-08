@@ -43,7 +43,7 @@
     top: 96px;
     left: 180px;
     width: 408px;
-    min-height: 584px;
+    height: 584px;
   }
 
   @media screen and (min-width: 1158px) {
